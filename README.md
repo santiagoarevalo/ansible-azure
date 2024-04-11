@@ -26,7 +26,8 @@ Listed below are the commands used and their purpose.
 For this, we add the following tasks to the playbook:
 
 ![image](https://github.com/santiagoarevalo/ansible-azure/assets/71450411/91f010ea-97dd-4339-85dd-4c13846157d3)
-* Finally, we can now run the commands: ````ansible-playbook -i inventory/hosts.ini playbooks/install_docker.yml```` and ````ansible-playbook -i inventory/hosts.ini playbooks/run_container.yml````
+* Finally, we can now run the commands:
+   ````ansible-playbook -i inventory/hosts.ini playbooks/install_docker.yml```` and ````ansible-playbook -i inventory/hosts.ini playbooks/run_container.yml````
 
 In order to access the service we are exposing on the public ip associated with the virtual machine, and on the port specified in the main.yml of the run_container tasks, we must create a security rule with a new access control list. For this:
 - We go to the main view of the virtual machine in the Azure Portal.
